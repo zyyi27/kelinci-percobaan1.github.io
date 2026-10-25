@@ -1,0 +1,33 @@
+/* Custom Styles - Melengkapi Tailwind CSS */
+
+/* Efek transisi halus untuk seluruh elemen interaktif */
+input, textarea, button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Kustomisasi scrollbar untuk tabel agar lebih rapi */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
+
+/* Mencegah input number dari memunculkan panah spin otomatis di beberapa browser */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
