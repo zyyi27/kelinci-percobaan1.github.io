@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Supabase Setup
-const supabaseUrl = process.env.SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseKey = process.env.SUPABASE_KEY || 'placeholder-key';
+const supabaseUrl = 'https://asetxfxkcciobtedapbk.supabase.co' || 'https://placeholder.supabase.co';
+const supabaseKey = 'sb_publishable_ztw4jx6-LpkOs-ttEf_yPQ_H87Y0t57' || 'placeholder-key';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // ==========================================
